@@ -1,0 +1,148 @@
+/******* Change Box Model ***************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('/images/site/checkerboard.jpg');
+  background-repeat: repeat;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 20px;
+  border-color: cornflowerblue;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#site-name {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#login-link {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+#navigation li {
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+#top-header {
+  height: 100px;
+}
+
+#description {
+  display: flexbox;
+  text-align: left;
+  font-size: 1.2rem;
+  color:#01b0d3;
+  background-color: white;
+  opacity: 0.8;
+  padding-top: 50px;
+  width: 150px;
+}
+
+#description button{
+  background-color: #01b0d3;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hero-img {
+  width: auto;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -250px;
+}
+
+
+#review{
+  text-align: left;
+  display: block;
+  max-height: 400px;
+  justify-self: center;
+}
+
+#review li {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.upgrade {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  background-color: #01b0d3;
+}
+
+.upgrade img {
+  max-width: 100%;
+  height: auto;
+}
+
+#upgrades{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  background-color: white;
+  justify-content: center;
+  justify-self: center;
+}
+
+#upgrades h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#upgrades a {
+  justify-self: center;
+  color: blue;
+  margin-top: -20px;
+  text-decoration: underline;
+}
